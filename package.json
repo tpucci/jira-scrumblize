@@ -1,0 +1,8 @@
+{
+  "name": "jira-scrumblize",
+  "version": "1.0.0",
+  "description": "Make Jira more scrum-friendly.",
+  "main": "index.js",
+  "author": "Thomas Pucci",
+  "license": "MIT"
+}
