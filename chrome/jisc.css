@@ -1,0 +1,235 @@
+html, body, #page {
+    height: 100% !important;
+}
+
+#page {
+    display: flex !important;
+    flex-flow: column !important;
+}
+
+header {
+    flex: 0 1 41px !important;
+}
+
+#content {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-flow: column !important;
+}
+
+#gh {
+    flex: 1 1 100% !important;
+    display: flex !important;
+    flex-flow: column !important;
+}
+
+#ghx-header {
+    margin: 0 !important;
+    padding: 20px !important;
+    flex: 0 0 auto !important;
+    background: #3572b0 !important;
+}
+
+span.subnav-page-header, span.subnav-container {
+    display: inline !important;
+    color: whitesmoke !important;
+}
+
+span.subnavigator-title {
+    float: none !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    vertical-align: top !important;
+    padding-bottom: 4px !important;
+    padding-left: 4px !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    color: white !important;
+}
+
+#ghx-operations {
+    position: absolute !important;
+    transform: translateY(-70%) !important;
+    flex: 1 0 0 !important;
+}
+
+#js-quickfilters-label {
+    display: none !important;
+}
+
+.ghx-controls-filters dd a {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid transparent !important;
+    -webkit-border-radius: 3px 3px 3px 3px !important;
+    border-radius: 3px 3px 3px 3px !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    margin: 0 5px 0 0 !important;
+    padding: 3px 5px !important;
+    font-size: 12px !important;
+    color: white !important;
+}
+
+#ghx-content-main {
+    flex: 1 0 0 !important;
+    display: flex !important;
+    flex-flow: column !important;
+}
+
+#ghx-work {
+    border-top: none !important;
+}
+
+#ghx-modes-tools {
+    font-size: 12px !important;
+}
+
+.aui-button {
+    background: rgb(245, 245, 245) !important;
+    border: 1px solid transparent !important;
+    -webkit-border-radius: 3px 3px 3px 3px !important;
+    border-radius: 3px 3px 3px 3px !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    margin: 0 5px 0 0 !important;
+    padding: 3px 5px !important;
+    font-size: 12px !important;
+    color: #3b73af !important;
+}
+
+.time {
+    color: white !important;
+}
+
+.aui-button .aui-icon, .ghx-sprint-meta .aui-icon {
+    transform: scale(.7) !important;
+}
+
+.ghx-sprint-meta {
+    margin-right: 0 !important;
+    margin-top: -1px !important;
+}
+
+#ghx-column-headers {
+    padding: 0 !important;
+    background: #3572b0 !important;
+}
+
+.ghx-column-headers li.ghx-column{
+    padding: 10px !important;
+    background: whitesmoke !important;
+    border-radius: 3px 3px 0 0 !important;
+}
+
+.ghx-column-headers .ghx-column h2{
+    font-weight: 600 !important;
+}
+
+.ghx-zone-overlay-table {
+    background: transparent !important;
+    transform: translate(-10px, -46px);
+}
+
+.ghx-column-header, .ghx-column, .ghx-zone-overlay-column  {
+    width: 270px !important;
+}
+
+.ghx-column {
+    padding: 0 10px !important;
+}
+
+#ghx-column-header-group {
+    position: sticky !important;
+    padding: 0 !important;
+    top: 0 !important;
+    left: initial !important;
+    background: transparent !important;
+}
+
+#ghx-pool {
+    padding-left: 0px !important;
+    display: flex !important;
+    flex-flow: column !important;
+    background: #3572b0 !important;
+    position: relative !important;
+}
+
+#ghx-rabid {
+    /* flex: 0 0 100% !important; */
+    display: flex !important;
+    flex-flow: column !important;
+}
+
+.ghx-swimlane-header {
+    display:none;
+}
+
+.ghx-expander.js-expander {
+    align-text: center !important;
+    margin-left: 10px !important;
+}
+
+.ghx-swimlane-header {
+   margin-left: 0px !important;
+   transform-origin: left !important;
+   text-align: center !important;
+   height: 30pxpx !important;
+   overflow: visible !important;
+   z-index: 1 !important;
+}
+
+.ghx-swimlane-header:after {
+    content: initial !important;
+}
+
+.js-issue {
+    background: white !important;
+    border: none !important;
+    padding-top: 24px !important;
+    border-bottom: 1px solid #dedede !important;
+    border-left: 1px solid #f3f3f3 !important;
+    border-right: 1px solid #f3f3f3 !important;
+    border-top: 1px solid #f3f3f3 !important;
+}
+
+.ghx-avatar-img {
+    border-radius: 3px !important;
+}
+
+a.ghx-key {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    background: rgb(255,215,0) !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+    font-weight: 600 !important;
+    padding: 3px !important;
+    margin: 0 !important;
+    border-radius: 3px 0 0 0 !important;
+    color: rgba(0, 0, 0, 0.79) !important;
+}
+
+.ghx-row.ghx-highlighted-field {
+    position: absolute !important;
+    top: 5px !important;
+    right: 5px !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+}
+
+.ghx-row.ghx-highlighted-field span {
+    font-size: 10px !important;
+    line-height: 10px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+.ghx-first {
+    background: rgba(0, 0, 0, 0.42) !important;
+}
+
+.ghx-column {
+    border-radius: 0 !important;
+}

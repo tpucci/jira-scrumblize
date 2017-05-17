@@ -4,5 +4,15 @@
   "description": "Make Jira more scrum-friendly.",
   "main": "index.js",
   "author": "Thomas Pucci",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --config webpack.config --watch -d"
+  },
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "path": "^0.12.7",
+    "webpack": "^2.5.1"
+  }
 }
