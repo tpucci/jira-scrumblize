@@ -2,6 +2,8 @@
 
 Make Jira Scrum-friendly
 
+*This repo is mostly inspired by the [Scrummer extension](https://github.com/foucdeg/scrummer). :)*
+
 ## Installation
 
 1. Enable **Developper Mode** in [Chrome Extensions Settings](chrome://extensions/).
