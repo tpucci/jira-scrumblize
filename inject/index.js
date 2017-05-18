@@ -11,18 +11,17 @@ const calculatePointsForList = (list) => {
   });
   listChangeObserver.observe(list.querySelector('.list-header-num-cards'), {
     attributes: true
-  });
+  });*/
 
   // Array.slice can convert a NodeList to an array
-  let listPoints = Array.prototype.slice.call(list.querySelectorAll('.list-card:not(.hide)'))
+  let listPoints = Array.prototype.slice.call(list.querySelectorAll('.ghx-issue'))
   .reduce((listPoints, list) => {
-    let cardPoints = calculatePointsForCard(list);
-    listPoints.story += cardPoints.story;
-    listPoints.post += cardPoints.post;
+    let cardPoints = 1; //calculatePointsForCard(list);
+    listPoints += cardPoints;
     return listPoints;
-  }, { story: 0, post: 0 });
+  }, 0);
 
-  let listHeader = null;
+  /*let listHeader = null;
   if (settings.showColumnTotals && (listHeader = list.querySelector('.js-list-header'))) {
     // Add or update points badges
     if (settings.showStoryPoints) {
@@ -33,10 +32,10 @@ const calculatePointsForList = (list) => {
       let badge = findOrInsertSpan(listHeader, 'scrummer-list-post-points', listHeader.querySelector('.js-list-name-input'));
       badge.textContent = formatPoints(listPoints.post);
     }
-  }
+  }*/
 
   return listPoints;
-}*/
+}
 
 const findOrInsertSpan = (parent, className, insertBeforeElement) => {
   let span = parent.querySelector('.' + className);
