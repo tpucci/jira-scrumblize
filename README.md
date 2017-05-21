@@ -6,11 +6,11 @@ Make Jira Scrum-friendly
 
 ## Installation
 
-1. Enable **Developper Mode** in [Chrome Extensions Settings](chrome://extensions/).
-2. Click **Load unpacked extension...**.
-3. Run `yarn` command to install project dependancies.
-4. Run `yarn dev` command to pre-build the chrome extension.
-5. Open the **pre-build** folder of this repository.
+1. Download [Jira-Scrumblize Chrome Extension](build/jira-scrumblize.chromium.zip).
+2. Extract the downloaded archive.
+3. Enable **Developper Mode** in [Chrome Extensions Settings](chrome://extensions/).
+4. Click **Load unpacked extension...**.
+5. Open the **jira-scrumblize.chromium** folder you precedently created.
 
 ## Development
 
