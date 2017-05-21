@@ -1,9 +1,10 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: './inject/index.js',
+  entry: './src/index.js',
   output: {
-    path: path.resolve('chrome'),
+    path: path.resolve('pre-build'),
     filename: 'jisc.js',
   },
   module: {
@@ -11,4 +12,10 @@ module.exports = {
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
     ],
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      { context: 'platform/chromium', from: '**/*', to: '.' },
+      { context: 'src', from: '*.css', to: '.' },
+    ])
+  ]
 };

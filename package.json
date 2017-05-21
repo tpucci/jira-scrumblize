@@ -6,12 +6,16 @@
   "author": "Thomas Pucci",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --config webpack.config --watch -d"
+    "dev": "webpack --config webpack.config --watch -d",
+    "clean-pre-build": "rm -rf pre-build",
+    "build:chrome": "webpack --config webpack.config -d",
+    "make:chrome": "yarn clean-pre-build && yarn build:chrome && ./scripts/make-chromium.sh"
   },
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
     "path": "^0.12.7",
     "webpack": "^2.5.1"
   }

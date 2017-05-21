@@ -8,11 +8,13 @@ Make Jira Scrum-friendly
 
 1. Enable **Developper Mode** in [Chrome Extensions Settings](chrome://extensions/).
 2. Click **Load unpacked extension...**.
-3. Open the **chrome** folder of this repository.
+3. Run `yarn` command to install project dependancies.
+4. Run `yarn dev` command to pre-build the chrome extension.
+5. Open the **pre-build** folder of this repository.
 
 ## Development
 
-Run `yarn`command to install project dependancies.
+Run `yarn` command to install project dependancies.
 You need to manualy reload the extension in [Chrome Extensions Settings](chrome://extensions/) to watch your changes.
 
 ### Styles

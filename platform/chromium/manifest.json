@@ -3,8 +3,7 @@
 
   "name": "Jira Scrumblize",
   "description": "This extension makes JIRA more scrum-friendly",
-  "version": "1.0",
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "version": "0.0.0.1",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -12,10 +11,11 @@
   "content_scripts": [ {
     "css": [ "jisc.css", "scrummer.css" ],
     "js": ["jisc.js"],
-    "matches": [ "https://*.atlassian.net/secure/RapidBoard.jspa*" ]
+    "matches": [ "https://*.atlassian.net/secure/RapidBoard.jspa*" ],
+    "exclude_matches": [ "https://*.atlassian.net/secure/RapidBoard.jspa*view=planning" ]
   } ],
   "page_action": {
-    "default_icon": "icon.png"
+    "default_icon": "img/icon.png"
   },
   "permissions": [
     "declarativeContent",

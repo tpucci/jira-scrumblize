@@ -54,6 +54,27 @@ span.subnavigator-title {
     flex: 1 0 0 !important;
 }
 
+#ghx-operations .ghx-search {
+    line-height: 12px !important;
+    font-size: 12px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+    border-image: initial !important;
+    border-radius: 3px !important;
+    margin: 0px 5px 0px 0px !important;
+    padding: 3px 5px !important;
+    height: initial !important;
+}
+
+#ghx-backlog-search.ghx-active .ghx-search {
+    width: 300px !important;
+}
+
+#ghx-operations .aui-iconfont-search-small, #ghx-operations .aui-iconfont-remove {
+    top: 3px !important;
+}
+
 #js-quickfilters-label {
     display: none !important;
 }
@@ -85,7 +106,7 @@ span.subnavigator-title {
     font-size: 12px !important;
 }
 
-.aui-button {
+#ghx-header .aui-button {
     background: rgb(245, 245, 245) !important;
     border: 1px solid transparent !important;
     -webkit-border-radius: 3px 3px 3px 3px !important;
@@ -98,11 +119,11 @@ span.subnavigator-title {
     color: #3b73af !important;
 }
 
-.time {
+#ghx-header .time {
     color: white !important;
 }
 
-.aui-button .aui-icon, .ghx-sprint-meta .aui-icon {
+#ghx-header .aui-button .aui-icon, .ghx-sprint-meta .aui-icon {
     transform: scale(.7) !important;
 }
 
@@ -111,18 +132,18 @@ span.subnavigator-title {
     margin-top: -1px !important;
 }
 
-#ghx-column-headers {
+#ghx-work #ghx-column-headers {
     padding: 0 !important;
     background: #3572b0 !important;
 }
 
-.ghx-column-headers li.ghx-column{
+#ghx-work .ghx-column-headers li.ghx-column{
     padding: 10px !important;
     background: whitesmoke !important;
     border-radius: 3px 3px 0 0 !important;
 }
 
-.ghx-column-headers .ghx-column h2{
+#ghx-work .ghx-column-headers .ghx-column h2{
     font-weight: 600 !important;
 }
 
@@ -131,15 +152,15 @@ span.subnavigator-title {
     transform: translate(-10px, -46px);
 }
 
-.ghx-column-header, .ghx-column, .ghx-zone-overlay-column  {
+#ghx-work .ghx-column-header, .ghx-column, .ghx-zone-overlay-column  {
     width: 270px !important;
 }
 
-.ghx-column {
+#ghx-work .ghx-column {
     padding: 0 10px !important;
 }
 
-#ghx-column-header-group {
+#ghx-work #ghx-column-header-group {
     position: sticky !important;
     padding: 0 !important;
     top: 0 !important;
@@ -147,7 +168,7 @@ span.subnavigator-title {
     background: transparent !important;
 }
 
-#ghx-pool {
+#ghx-work #ghx-pool {
     padding-left: 0px !important;
     display: flex !important;
     flex-flow: column !important;
@@ -156,21 +177,19 @@ span.subnavigator-title {
 }
 
 #ghx-rabid {
-    /* flex: 0 0 100% !important; */
     display: flex !important;
     flex-flow: column !important;
 }
 
-.ghx-swimlane-header {
+#ghx-work .ghx-swimlane-header {
     display:none;
 }
 
-.ghx-expander.js-expander {
-    align-text: center !important;
+#ghx-work .ghx-expander.js-expander {
     margin-left: 10px !important;
 }
 
-.ghx-swimlane-header {
+#ghx-work .ghx-swimlane-header {
    margin-left: 0px !important;
    transform-origin: left !important;
    text-align: center !important;
@@ -179,11 +198,11 @@ span.subnavigator-title {
    z-index: 1 !important;
 }
 
-.ghx-swimlane-header:after {
+#ghx-work .ghx-swimlane-header:after {
     content: initial !important;
 }
 
-.js-issue {
+#ghx-work .js-issue {
     background: white !important;
     border: none !important;
     padding-top: 24px !important;
@@ -197,7 +216,7 @@ span.subnavigator-title {
     border-radius: 3px !important;
 }
 
-a.ghx-key {
+#ghx-work a.ghx-key {
     position: absolute !important;
     left: 0 !important;
     top: 0 !important;
@@ -211,7 +230,7 @@ a.ghx-key {
     color: rgba(0, 0, 0, 0.79) !important;
 }
 
-.ghx-row.ghx-highlighted-field {
+#ghx-work .ghx-row.ghx-highlighted-field {
     position: absolute !important;
     top: 5px !important;
     right: 5px !important;
@@ -219,17 +238,13 @@ a.ghx-key {
     line-height: 10px !important;
 }
 
-.ghx-row.ghx-highlighted-field span {
+#ghx-work .ghx-row.ghx-highlighted-field span {
     font-size: 10px !important;
     line-height: 10px !important;
     font-weight: 700 !important;
     margin: 0 !important;
 }
 
-.ghx-first {
-    background: rgba(0, 0, 0, 0.42) !important;
-}
-
-.ghx-column {
+#ghx-work .ghx-column {
     border-radius: 0 !important;
 }
