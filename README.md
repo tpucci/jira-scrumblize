@@ -15,7 +15,6 @@ Make Jira Scrum-friendly
 ## Development
 
 Run `yarn` command to install project dependancies.
-You need to manualy reload the extension in [Chrome Extensions Settings](chrome://extensions/) to watch your changes.
 
 ### Styles
 
@@ -24,4 +23,7 @@ Edit `scrummer.css` to modify the style of classes injected by our script.
 
 ### Script
 
-Run `yarn dev` to make Webpack watch `inject/index.js` file and transpile it with the `es2015` preset into `chrome/jisc.js`.
+Run `yarn dev` to make Webpack watch `src/index.js` file and transpile it with the `es2015` preset into `pre-build/jisc.js`.
+Install the pre-built extension located it the `pre-build`folder.
+
+You need to manualy reload the extension in [Chrome Extensions Settings](chrome://extensions/) to watch your changes.
