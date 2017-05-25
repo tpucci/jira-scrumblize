@@ -29,6 +29,7 @@ const findOrInsertToggle = (parent, id, index) => {
     toggle.innerText = id;
     toggle.onclick = () => toggleRow(index);
     parent.appendChild(toggle);
+    console.log('APPEND BUTTON', id, index);
   }
   return toggle;
 }
@@ -37,7 +38,7 @@ const displayRowToggles = () => {
   let quickFiltersWrapper = document.querySelector('#js-work-quickfilters');
 
   // Array.slice can convert a NodeList to an array
-  let rowsHeaders = Array.prototype.slice.call(document.querySelectorAll('.ghx-heading'))
+  let rowsHeaders = Array.prototype.slice.call(document.querySelectorAll('.ghx-swimlane .ghx-heading'))
   .forEach((rowHeader, index) => {
     let id = rowHeader.querySelector('span').innerText;
     findOrInsertToggle(quickFiltersWrapper, id, index);

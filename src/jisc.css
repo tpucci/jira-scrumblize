@@ -321,3 +321,29 @@ li.ghx-column {
     flex: 0 0 270px !important;
     margin-left: 10px !important;
 }
+
+.ghx-column::-webkit-scrollbar-track, #ghx-pool::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: rgba(214, 218, 220, .5);
+}
+
+.ghx-column::-webkit-scrollbar
+{
+	width: 9px;
+    margin-right: 5px;
+	background-color: whitesmoke;
+}
+
+#ghx-pool::-webkit-scrollbar
+{
+	height: 9px;
+    margin: 5px;
+	background-color: transparent;
+}
+
+.ghx-column::-webkit-scrollbar-thumb, #ghx-pool::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: rgba(196, 201, 204, .8);
+}
