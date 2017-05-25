@@ -21,7 +21,6 @@ Install the extension [here](https://chrome.google.com/webstore/detail/jira-scru
 ## Development
 
 Run `yarn` command to install project dependancies.
-You need to manualy reload the extension in [Chrome Extensions Settings](chrome://extensions/) to watch your changes.
 
 ### Styles
 
@@ -36,5 +35,5 @@ Run `yarn dev` to make Webpack watch `inject/index.js` file and transpile it wit
 
 1. Load the extension in [Chrome Extensions Settings](chrome://extensions/).
 2. Click **Load unpacked extension...**.
-3. Open the **pre-build** folder of this repo after having ran `yarn dev`.
+3. Open the **pre-build** folder of this repo (after having ran `yarn dev`).
 4. You need to manualy reload the extension in [Chrome Extensions Settings](chrome://extensions/) to watch your changes.
