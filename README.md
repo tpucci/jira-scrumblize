@@ -6,6 +6,12 @@ Make Jira Scrum-friendly
 
 ## Installation
 
+### Through Chrome-web store
+
+Install the extension [here](https://chrome.google.com/webstore/detail/jira-scrumblize/lfglfaihiikkmhehemahdledaakpnchb?hl=en-US&gl=FR).
+
+### Through Chrome Developper settings
+
 1. Download [Jira-Scrumblize Chrome Extension](build/jira-scrumblize.chromium.zip).
 2. Extract the downloaded archive.
 3. Enable **Developper Mode** in [Chrome Extensions Settings](chrome://extensions/).
@@ -24,4 +30,11 @@ Edit `scrummer.css` to modify the style of classes injected by our script.
 
 ### Script
 
-Run `yarn dev` to make Webpack watch `inject/index.js` file and transpile it with the `es2015` preset into `chrome/jisc.js`.
+Run `yarn dev` to make Webpack watch `inject/index.js` file and transpile it with the `es2015` preset into `pre-build/jisc.js`.
+
+### Debug
+
+1. Load the extension in [Chrome Extensions Settings](chrome://extensions/).
+2. Click **Load unpacked extension...**.
+3. Open the **pre-build** folder of this repo after having ran `yarn dev`.
+4. You need to manualy reload the extension in [Chrome Extensions Settings](chrome://extensions/) to watch your changes.

@@ -80,7 +80,7 @@ span.subnavigator-title {
 }
 
 .ghx-controls-filters dd a {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     border: 1px solid transparent !important;
     -webkit-border-radius: 3px 3px 3px 3px !important;
     border-radius: 3px 3px 3px 3px !important;
@@ -90,6 +90,11 @@ span.subnavigator-title {
     padding: 3px 5px !important;
     font-size: 12px !important;
     color: white !important;
+}
+
+.ghx-controls-filters dd a.ghx-active {
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 #ghx-content-main {
@@ -119,6 +124,15 @@ span.subnavigator-title {
     color: #3b73af !important;
 }
 
+#ghx-header .aui-button.aui-dropdown2-trigger {
+    padding-right: 20px !important;
+}
+
+#ghx-header .aui-button.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless):after {
+    top: 11px;
+    margin-left: -15px;
+}
+
 #ghx-header .time {
     color: white !important;
 }
@@ -133,6 +147,7 @@ span.subnavigator-title {
 }
 
 #ghx-work #ghx-column-headers {
+    display: flex;
     padding: 0 !important;
     background: #3572b0 !important;
 }
@@ -169,6 +184,7 @@ span.subnavigator-title {
 }
 
 #ghx-work #ghx-pool {
+    padding-top: 0 !important;
     padding-left: 0px !important;
     display: flex !important;
     flex-flow: column !important;
@@ -228,6 +244,7 @@ span.subnavigator-title {
     margin: 0 !important;
     border-radius: 3px 0 0 0 !important;
     color: rgba(0, 0, 0, 0.79) !important;
+    width: auto !important;
 }
 
 #ghx-work .ghx-row.ghx-highlighted-field {
@@ -247,4 +264,60 @@ span.subnavigator-title {
 
 #ghx-work .ghx-column {
     border-radius: 0 !important;
+}
+
+body:not(.adg3) .ghx-column-headers .ghx-qty {
+    position: absolute;
+    bottom: -2px;
+    font-size: 12px;
+    color: grey;
+}
+
+body:not(.adg3) .ghx-column-headers .ghx-qty::after {
+    display: inline-block;
+    content: "Cards";
+    font-size: 12px;
+    color: grey;
+    position: relative;
+    left: 4px;
+}
+
+.ghx-swimlane:last-of-type {
+    margin-bottom: 10px !important;
+}
+
+.ghx-swimlane .ghx-columns{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#ghx-work li.ghx-column.ui-sortable {
+    width: 270px !important;
+    display: inline-block;
+    flex: 0 0 270px;
+    padding: 0 !important;
+    margin-left: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: none;
+}
+
+.ghx-swimlane .ghx-column .ghx-wrap-issue {
+    padding: 5px 5px 1px !important;
+    background: whitesmoke !important;
+    border-radius: 0 0 4px 4px !important;
+    width: auto !important;
+}
+
+.ghx-issue .ghx-grabber {
+    width: 2px !important;
+    left: 0px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    border-radius: 3px 0 0 3px !important;
+}
+
+li.ghx-column {
+    flex: 0 0 270px !important;
+    margin-left: 10px !important;
 }
