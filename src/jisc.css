@@ -190,6 +190,7 @@ span.subnavigator-title {
     flex-flow: column !important;
     background: #3572b0 !important;
     position: relative !important;
+    padding-bottom: 20px !important;
 }
 
 #ghx-rabid {
@@ -282,13 +283,15 @@ body:not(.adg3) .ghx-column-headers .ghx-qty::after {
     left: 4px;
 }
 
-.ghx-swimlane:last-of-type {
+.ghx-swimlane {
     margin-bottom: 10px !important;
+    height: 100%;
 }
 
 .ghx-swimlane .ghx-columns{
     display: flex;
     flex-wrap: nowrap;
+    height: 100;
 }
 
 #ghx-work li.ghx-column.ui-sortable {
@@ -297,16 +300,18 @@ body:not(.adg3) .ghx-column-headers .ghx-qty::after {
     flex: 0 0 270px;
     padding: 0 !important;
     margin-left: 10px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: visible;
     background: none;
 }
 
 .ghx-swimlane .ghx-column .ghx-wrap-issue {
     padding: 5px 5px 1px !important;
-    background: whitesmoke !important;
+    background: linear-gradient(to bottom, whitesmoke, transparent) !important;
     border-radius: 0 0 4px 4px !important;
     width: auto !important;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .ghx-issue .ghx-grabber {
@@ -314,7 +319,7 @@ body:not(.adg3) .ghx-column-headers .ghx-qty::after {
     left: 0px !important;
     top: 0 !important;
     bottom: 0 !important;
-    border-radius: 3px 0 0 3px !important;
+    border-radius: 3px !important;
 }
 
 li.ghx-column {
@@ -322,28 +327,58 @@ li.ghx-column {
     margin-left: 10px !important;
 }
 
-.ghx-column::-webkit-scrollbar-track, #ghx-pool::-webkit-scrollbar-track
+.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar-track, #ghx-pool::-webkit-scrollbar-track
 {
 	border-radius: 10px;
 	background-color: rgba(214, 218, 220, .5);
 }
 
-.ghx-column::-webkit-scrollbar
+.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar
 {
 	width: 9px;
     margin-right: 5px;
-	background-color: whitesmoke;
+	background-color: linear-gradient(to bottom, whitesmoke, transparent) !important;;
 }
 
 #ghx-pool::-webkit-scrollbar
 {
-	height: 9px;
-    margin: 5px;
+	height: 15px;
 	background-color: transparent;
 }
 
-.ghx-column::-webkit-scrollbar-thumb, #ghx-pool::-webkit-scrollbar-thumb
+.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	background-color: rgba(196, 201, 204, .8);
+}
+
+#ghx-pool::-webkit-scrollbar-thumb
+{
+	height: 9px;
+	border-radius: 10px;
+	background-color: rgba(196, 201, 204, .8);
+}
+
+#ghx-pool::-webkit-scrollbar-button {
+    display: block;
+    height: 5px;
+    width: 5px;
+    
+}
+
+.ghx-zone-overlay-table {
+    margin-top: 52px
+}
+
+.ghx-issue.ui-sortable-placeholder {
+    visibility: visible !important;
+    box-shadow: inset 0px 0px 150px 0px rgba(0,0,0,0.45);
+}
+
+.ghx-move-count {
+    display: none !important;
+}
+
+.ghx-drag-in-progress .ghx-issue.js-parent-drag.ghx-selected:not(.ui-sortable-placeholder) {
+    transform: rotate(4deg);
 }

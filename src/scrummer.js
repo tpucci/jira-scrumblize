@@ -40,6 +40,8 @@ let listChangeObserver = new MutationObserver(function (mutations) {
       (mutation.removedNodes.length === 1 && containsNodeWithClass(mutation.removedNodes, 'scrummer-post-points'))
     ) return;
 
+    console.log('MUTATION', mutation);
+
     // If the list was modified, recalculate
     if (mutation.target.classList.contains('ghx-wrap-issue') ||
         mutation.target.classList.contains('ghx-subtask-group') ||
