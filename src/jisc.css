@@ -291,7 +291,10 @@ body:not(.adg3) .ghx-column-headers .ghx-qty::after {
 .ghx-swimlane .ghx-columns{
     display: flex;
     flex-wrap: nowrap;
-    height: 100;
+    position: absolute;
+    top: 47px;
+    bottom: 20px;
+    height: initial;
 }
 
 #ghx-work li.ghx-column.ui-sortable {
@@ -363,7 +366,7 @@ li.ghx-column {
     display: block;
     height: 5px;
     width: 5px;
-    
+
 }
 
 .ghx-zone-overlay-table {
