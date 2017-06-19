@@ -386,6 +386,17 @@ li.ghx-column {
     transform: rotate(4deg);
 }
 
+.ghx-wrap-issue .ui-draggable.ui-draggable-dragging {
+    transform: rotate(4deg);
+    position: absolute !important;
+    width: 250px !important;
+}
+
+.ghx-wrap-issue .ghx-parent-group .ghx-issue:not(.ui-draggable-dragging) {
+    top: initial !important;
+    left: initial !important;
+}
+
 .ghx-row.ghx-stat-1 {
     transform: scale(.7);
     transform-origin: bottom left;
