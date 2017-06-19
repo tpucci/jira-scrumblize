@@ -292,12 +292,12 @@ body:not(.adg3) .ghx-column-headers .ghx-qty::after {
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
-    top: 47px;
+    top: 46px;
     bottom: 20px;
     height: initial;
 }
 
-#ghx-work li.ghx-column.ui-sortable {
+#ghx-work li.ghx-column {
     width: 270px !important;
     display: inline-block;
     flex: 0 0 270px;
@@ -384,4 +384,19 @@ li.ghx-column {
 
 .ghx-drag-in-progress .ghx-issue.js-parent-drag.ghx-selected:not(.ui-sortable-placeholder) {
     transform: rotate(4deg);
+}
+
+.ghx-row.ghx-stat-1 {
+    transform: scale(.7);
+    transform-origin: bottom left;
+}
+
+.ghx-extra-field.ghx-fa {
+    font-size: 10px !important;
+    line-height: 10px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    background: whitesmoke;
+    padding: 3px;
+    border-radius: 4px;
 }
