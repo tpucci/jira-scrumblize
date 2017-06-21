@@ -392,11 +392,16 @@ li.ghx-column {
 }
 
 .ghx-extra-field.ghx-fa {
+    display: none;
+}
+
+.ghx-extra-field {
     font-size: 10px !important;
     line-height: 10px !important;
     font-weight: 700 !important;
     margin: 0 !important;
-    background: whitesmoke;
+    background: #f79232;
     padding: 3px;
     border-radius: 4px;
+    color: white;
 }
