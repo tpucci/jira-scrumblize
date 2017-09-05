@@ -2,6 +2,19 @@ const STORY_POINTS_REGEXP = /\[(\?|\d+\.?,?\d*)\]/m;
 
 let debounceTimeout;
 
+const findOrInsertRecalculateButon = (parent, id) => {
+  let button = parent.querySelector('#' + id);
+  if (!button) {
+    button = document.createElement('button');
+    button.id = id;
+    button.className = 'scummer-compute-button';
+    button.innerText = 'Compute Points';
+    button.onclick = () => calculatePointsForBoard();
+    parent.appendChild(button);
+  }
+  return button;
+}
+
 const debounce = (func, wait, immediate) => {
   return function () {
     let context = this, args = arguments;
@@ -40,8 +53,6 @@ let listChangeObserver = new MutationObserver(function (mutations) {
       (mutation.removedNodes.length === 1 && containsNodeWithClass(mutation.removedNodes, 'scrummer-post-points'))
     ) return;
 
-    console.log('MUTATION', mutation);
-
     // If the list was modified, recalculate
     if (mutation.target.classList.contains('ghx-wrap-issue') ||
         mutation.target.classList.contains('ghx-subtask-group') ||
@@ -59,7 +70,9 @@ let listChangeObserver = new MutationObserver(function (mutations) {
   });
 });
 
-const calculateStoryPointsForTitle = (title) => {
+const calculateStoryPointsForTitle = (title, estimate) => {
+  if (estimate) {
+    return parseFloat(estimate.replace(',','.'));}
   if (!settings.showStoryPoints) return;
   let matches = title.match(STORY_POINTS_REGEXP);
   if (matches) {
@@ -91,6 +104,7 @@ const calculatePointsForCard = (card) => {
   }
 
   let originalTitle = card.getAttribute('data-original-title');
+  let estimate = card.querySelector('.ghx-estimate').textContent;
 
   let cardShortId = card.querySelector('.ghx-issuekey-number');
   if (settings.showCardNumbers && !cardShortId.classList.contains('scrummer-card-id')) {
@@ -116,7 +130,7 @@ const calculatePointsForCard = (card) => {
     return 0;
   }
 
-  let calculatedPoints = calculateStoryPointsForTitle(originalTitle);
+  let calculatedPoints = calculateStoryPointsForTitle(originalTitle, estimate);
 
   if (
     !contentMutated &&
@@ -230,6 +244,7 @@ const calculatePointsForBoard = () => {
     if (settings.showStoryPoints) {
       let badge = findOrInsertSpan(boardHeader, 'scrummer-board-points', boardHeader.querySelector('#ghx-board-name'));
       badge.textContent = formatPoints(boardPoints);
+      findOrInsertRecalculateButon(boardHeader, 'scrummer-recalculate-button');
     }
   }
 }

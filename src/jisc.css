@@ -405,3 +405,9 @@ li.ghx-column {
     border-radius: 4px;
     color: white;
 }
+
+.ghx-sprint-goal {
+    color: white !important;
+    position: relative;
+    bottom: 14px;
+}
