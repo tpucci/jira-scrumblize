@@ -1,413 +1,470 @@
-html, body, #page {
-    height: 100% !important;
+html,
+body,
+#page {
+  height: 100% !important;
 }
 
 #page {
-    display: flex !important;
-    flex-flow: column !important;
+  display: flex !important;
+  flex-flow: column !important;
 }
 
 header {
-    flex: 0 1 41px !important;
+  flex: 0 1 41px !important;
 }
 
 #content {
-    flex-grow: 1 !important;
-    display: flex !important;
-    flex-flow: column !important;
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-flow: column !important;
 }
 
 #gh {
-    flex: 1 1 100% !important;
-    display: flex !important;
-    flex-flow: column !important;
+  flex: 1 1 100% !important;
+  display: flex !important;
+  flex-flow: column !important;
 }
 
 #ghx-header {
-    margin: 0 !important;
-    padding: 20px !important;
-    flex: 0 0 auto !important;
-    background: #3572b0 !important;
+  margin: 0 !important;
+  padding: 20px !important;
+  flex: 0 0 auto !important;
+  background: #3572b0 !important;
 }
 
-span.subnav-page-header, span.subnav-container {
-    display: inline !important;
-    color: whitesmoke !important;
+span.subnav-page-header,
+span.subnav-container {
+  display: inline !important;
+  color: whitesmoke !important;
 }
 
 span.subnavigator-title {
-    float: none !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    vertical-align: top !important;
-    padding-bottom: 4px !important;
-    padding-left: 4px !important;
-    font-size: 14px !important;
-    font-weight: 800 !important;
-    color: white !important;
+  float: none !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  vertical-align: top !important;
+  padding-bottom: 4px !important;
+  padding-left: 4px !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  color: white !important;
 }
 
 #ghx-operations {
-    position: absolute !important;
-    transform: translateY(-70%) !important;
-    flex: 1 0 0 !important;
+  position: absolute !important;
+  transform: translateY(-70%) !important;
+  flex: 1 0 0 !important;
 }
 
 #ghx-operations .ghx-search {
-    line-height: 12px !important;
-    font-size: 12px !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent !important;
-    border-image: initial !important;
-    border-radius: 3px !important;
-    margin: 0px 5px 0px 0px !important;
-    padding: 3px 5px !important;
-    height: initial !important;
+  line-height: 12px !important;
+  font-size: 12px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+  border-image: initial !important;
+  border-radius: 3px !important;
+  margin: 0px 5px 0px 0px !important;
+  padding: 3px 5px !important;
+  height: initial !important;
 }
 
 #ghx-backlog-search.ghx-active .ghx-search {
-    width: 300px !important;
+  width: 300px !important;
 }
 
-#ghx-operations .aui-iconfont-search-small, #ghx-operations .aui-iconfont-remove {
-    top: 3px !important;
+#ghx-operations .aui-iconfont-search-small,
+#ghx-operations .aui-iconfont-remove {
+  top: 3px !important;
 }
 
 #js-quickfilters-label {
-    display: none !important;
+  display: none !important;
 }
 
 .ghx-controls-filters dd a {
-    background: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid transparent !important;
-    -webkit-border-radius: 3px 3px 3px 3px !important;
-    border-radius: 3px 3px 3px 3px !important;
-    display: inline-block !important;
-    line-height: 1 !important;
-    margin: 0 5px 0 0 !important;
-    padding: 3px 5px !important;
-    font-size: 12px !important;
-    color: white !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid transparent !important;
+  -webkit-border-radius: 3px 3px 3px 3px !important;
+  border-radius: 3px 3px 3px 3px !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+  margin: 0 5px 0 0 !important;
+  padding: 3px 5px !important;
+  font-size: 12px !important;
+  color: white !important;
 }
 
 .ghx-controls-filters dd a.ghx-active {
-    font-weight: 600;
-    background: rgba(0, 0, 0, 0.5) !important;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 #ghx-content-main {
-    flex: 1 0 0 !important;
-    display: flex !important;
-    flex-flow: column !important;
+  flex: 1 0 0 !important;
+  display: flex !important;
+  flex-flow: column !important;
 }
 
 #ghx-work {
-    border-top: none !important;
+  border-top: none !important;
 }
 
 #ghx-modes-tools {
-    font-size: 12px !important;
+  font-size: 12px !important;
 }
 
 #ghx-header .aui-button {
-    background: rgb(245, 245, 245) !important;
-    border: 1px solid transparent !important;
-    -webkit-border-radius: 3px 3px 3px 3px !important;
-    border-radius: 3px 3px 3px 3px !important;
-    display: inline-block !important;
-    line-height: 1 !important;
-    margin: 0 5px 0 0 !important;
-    padding: 3px 5px !important;
-    font-size: 12px !important;
-    color: #3b73af !important;
+  background: rgb(245, 245, 245) !important;
+  border: 1px solid transparent !important;
+  -webkit-border-radius: 3px 3px 3px 3px !important;
+  border-radius: 3px 3px 3px 3px !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+  margin: 0 5px 0 0 !important;
+  padding: 3px 5px !important;
+  font-size: 12px !important;
+  color: #3b73af !important;
 }
 
 #ghx-header .aui-button.aui-dropdown2-trigger {
-    padding-right: 20px !important;
+  padding-right: 20px !important;
 }
 
-#ghx-header .aui-button.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless):after {
-    top: 11px;
-    margin-left: -15px;
+#ghx-header
+  .aui-button.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless):after {
+  top: 11px;
+  margin-left: -15px;
 }
 
 #ghx-header .time {
-    color: white !important;
+  color: white !important;
 }
 
-#ghx-header .aui-button .aui-icon, .ghx-sprint-meta .aui-icon {
-    transform: scale(.7) !important;
+#ghx-header .aui-button .aui-icon,
+.ghx-sprint-meta .aui-icon {
+  transform: scale(0.7) !important;
 }
 
 .ghx-sprint-meta {
-    margin-right: 0 !important;
-    margin-top: -1px !important;
+  margin-right: 0 !important;
+  margin-top: -1px !important;
 }
 
 #ghx-work #ghx-column-headers {
-    display: flex;
-    padding: 0 !important;
-    background: #3572b0 !important;
+  display: flex;
+  padding: 0 !important;
+  background: #3572b0 !important;
 }
 
-#ghx-work .ghx-column-headers li.ghx-column{
-    padding: 10px !important;
-    background: whitesmoke !important;
-    border-radius: 3px 3px 0 0 !important;
+#ghx-work .ghx-column-headers li.ghx-column {
+  padding: 10px !important;
+  background: whitesmoke !important;
+  border-radius: 3px 3px 0 0 !important;
 }
 
-#ghx-work .ghx-column-headers .ghx-column h2{
-    font-weight: 600 !important;
+#ghx-work .ghx-column-headers .ghx-column h2 {
+  font-weight: 600 !important;
 }
 
 .ghx-zone-overlay-table {
-    background: transparent !important;
-    transform: translate(-10px, -46px);
+  background: transparent !important;
+  transform: translate(-10px, -46px);
 }
 
-#ghx-work .ghx-column-header, .ghx-column, .ghx-zone-overlay-column  {
-    width: 270px !important;
+#ghx-work .ghx-column-header,
+.ghx-column,
+.ghx-zone-overlay-column {
+  width: 270px !important;
 }
 
 #ghx-work .ghx-column {
-    padding: 0 10px !important;
+  padding: 0 10px !important;
 }
 
 #ghx-work #ghx-column-header-group {
-    position: sticky !important;
-    padding: 0 !important;
-    top: 0 !important;
-    left: initial !important;
-    background: transparent !important;
+  position: sticky !important;
+  padding: 0 !important;
+  top: 0 !important;
+  left: initial !important;
+  background: transparent !important;
 }
 
 #ghx-work #ghx-pool {
-    padding-top: 0 !important;
-    padding-left: 0px !important;
-    display: flex !important;
-    flex-flow: column !important;
-    background: #3572b0 !important;
-    position: relative !important;
-    padding-bottom: 20px !important;
+  padding-top: 0 !important;
+  padding-left: 0px !important;
+  display: flex !important;
+  flex-flow: column !important;
+  background: #3572b0 !important;
+  position: relative !important;
+  padding-bottom: 20px !important;
 }
 
 #ghx-rabid {
-    display: flex !important;
-    flex-flow: column !important;
+  display: flex !important;
+  flex-flow: column !important;
 }
 
 #ghx-work .ghx-swimlane-header {
-    display:none;
+  display: none;
 }
 
 #ghx-work .ghx-expander.js-expander {
-    margin-left: 10px !important;
+  margin-left: 10px !important;
 }
 
 #ghx-work .ghx-swimlane-header {
-   margin-left: 0px !important;
-   transform-origin: left !important;
-   text-align: center !important;
-   height: 30pxpx !important;
-   overflow: visible !important;
-   z-index: 1 !important;
+  margin-left: 0px !important;
+  transform-origin: left !important;
+  text-align: center !important;
+  height: 30pxpx !important;
+  overflow: visible !important;
+  z-index: 1 !important;
 }
 
 #ghx-work .ghx-swimlane-header:after {
-    content: initial !important;
+  content: initial !important;
 }
 
 #ghx-work .js-issue {
-    background: white !important;
-    border: none !important;
-    padding-top: 24px !important;
-    border-bottom: 1px solid #dedede !important;
-    border-left: 1px solid #f3f3f3 !important;
-    border-right: 1px solid #f3f3f3 !important;
-    border-top: 1px solid #f3f3f3 !important;
+  background: white !important;
+  border: none !important;
+  padding-top: 24px !important;
+  border-bottom: 1px solid #dedede !important;
+  border-left: 1px solid #f3f3f3 !important;
+  border-right: 1px solid #f3f3f3 !important;
+  border-top: 1px solid #f3f3f3 !important;
 }
 
 .ghx-avatar-img {
-    border-radius: 3px !important;
+  border-radius: 3px !important;
 }
 
-#ghx-work a.ghx-key {
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    background: rgb(255,215,0) !important;
-    font-size: 10px !important;
-    line-height: 10px !important;
-    font-weight: 600 !important;
-    padding: 3px !important;
-    margin: 0 !important;
-    border-radius: 3px 0 0 0 !important;
-    color: rgba(0, 0, 0, 0.79) !important;
-    width: auto !important;
+a.ghx-key {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  background: rgb(255, 215, 0) !important;
+  font-size: 10px !important;
+  line-height: 10px !important;
+  font-weight: 600 !important;
+  padding: 3px !important;
+  margin: 0 !important;
+  border-radius: 3px 0 0 0 !important;
+  color: rgba(0, 0, 0, 0.79) !important;
+  width: auto !important;
 }
 
-#ghx-work .ghx-row.ghx-highlighted-field {
-    position: absolute !important;
-    top: 5px !important;
-    right: 5px !important;
-    font-size: 10px !important;
-    line-height: 10px !important;
+#ghx-work .ghx-row.ghx-highlighted-field,
+#jira .ghx-label {
+  position: absolute !important;
+  top: 5px !important;
+  right: 5px !important;
+  font-size: 10px !important;
+  line-height: 10px !important;
+}
+
+#jira .ghx-label {
+  max-width: none !important;
 }
 
 #ghx-work .ghx-row.ghx-highlighted-field span {
-    font-size: 10px !important;
-    line-height: 10px !important;
-    font-weight: 700 !important;
-    margin: 0 !important;
+  font-size: 10px !important;
+  line-height: 10px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
 }
 
 #ghx-work .ghx-column {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 body:not(.adg3) .ghx-column-headers .ghx-qty {
-    position: absolute;
-    bottom: -2px;
-    font-size: 12px;
-    color: grey;
+  position: absolute;
+  bottom: -2px;
+  font-size: 12px;
+  color: grey;
 }
 
 body:not(.adg3) .ghx-column-headers .ghx-qty::after {
-    display: inline-block;
-    content: "Cards";
-    font-size: 12px;
-    color: grey;
-    position: relative;
-    left: 4px;
+  display: inline-block;
+  content: "Cards";
+  font-size: 12px;
+  color: grey;
+  position: relative;
+  left: 4px;
 }
 
 .ghx-swimlane {
-    margin-bottom: 10px !important;
-    height: 100%;
+  margin-bottom: 10px !important;
+  height: 100%;
 }
 
-.ghx-swimlane .ghx-columns{
-    display: flex;
-    flex-wrap: nowrap;
-    position: absolute;
-    top: 46px;
-    bottom: 20px;
-    height: initial;
+.ghx-swimlane .ghx-columns {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 46px;
+  bottom: 20px;
+  height: initial;
 }
 
 #ghx-work li.ghx-column {
-    width: 270px !important;
-    display: inline-block;
-    flex: 0 0 270px;
-    padding: 0 !important;
-    margin-left: 10px;
-    overflow: visible;
-    background: none;
+  width: 270px !important;
+  display: inline-block;
+  flex: 0 0 270px;
+  padding: 0 !important;
+  margin-left: 10px;
+  overflow: visible;
+  background: none;
 }
 
 .ghx-swimlane .ghx-column .ghx-wrap-issue {
-    padding: 5px 5px 1px !important;
-    background: linear-gradient(to bottom, whitesmoke, transparent) !important;
-    border-radius: 0 0 4px 4px !important;
-    width: auto !important;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+  padding: 5px 5px 1px !important;
+  background: linear-gradient(to bottom, whitesmoke, transparent) !important;
+  border-radius: 0 0 4px 4px !important;
+  width: auto !important;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .ghx-issue .ghx-grabber {
-    width: 2px !important;
-    left: 0px !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    border-radius: 3px !important;
+  width: 2px !important;
+  left: 0px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  border-radius: 3px !important;
 }
 
 li.ghx-column {
-    flex: 0 0 270px !important;
-    margin-left: 10px !important;
+  flex: 0 0 270px !important;
+  margin-left: 10px !important;
 }
 
-.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar-track, #ghx-pool::-webkit-scrollbar-track
-{
-	border-radius: 10px;
-	background-color: rgba(214, 218, 220, .5);
+.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar-track,
+#ghx-pool::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(214, 218, 220, 0.5);
 }
 
-.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar
-{
-	width: 9px;
-    margin-right: 5px;
-	background-color: linear-gradient(to bottom, whitesmoke, transparent) !important;;
+.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 5px;
+  background-color: linear-gradient(
+    to bottom,
+    whitesmoke,
+    transparent
+  ) !important;
 }
 
-#ghx-pool::-webkit-scrollbar
-{
-	height: 15px;
-	background-color: transparent;
+#ghx-pool::-webkit-scrollbar {
+  height: 15px;
+  background-color: transparent;
 }
 
-.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: rgba(196, 201, 204, .8);
+.ghx-swimlane .ghx-column .ghx-wrap-issue::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(196, 201, 204, 0.8);
 }
 
-#ghx-pool::-webkit-scrollbar-thumb
-{
-	height: 9px;
-	border-radius: 10px;
-	background-color: rgba(196, 201, 204, .8);
+#ghx-pool::-webkit-scrollbar-thumb {
+  height: 9px;
+  border-radius: 10px;
+  background-color: rgba(196, 201, 204, 0.8);
 }
 
 #ghx-pool::-webkit-scrollbar-button {
-    display: block;
-    height: 5px;
-    width: 5px;
-
+  display: block;
+  height: 5px;
+  width: 5px;
 }
 
 .ghx-zone-overlay-table {
-    margin-top: 52px
+  margin-top: 52px;
 }
 
 .ghx-issue.ui-sortable-placeholder {
-    visibility: visible !important;
-    box-shadow: inset 0px 0px 150px 0px rgba(0,0,0,0.45);
+  visibility: visible !important;
+  box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.45);
 }
 
 .ghx-move-count {
-    display: none !important;
+  display: none !important;
 }
 
-.ghx-drag-in-progress .ghx-issue.js-parent-drag.ghx-selected:not(.ui-sortable-placeholder) {
-    transform: rotate(4deg);
+.ghx-drag-in-progress
+  .ghx-issue.js-parent-drag.ghx-selected:not(.ui-sortable-placeholder) {
+  transform: rotate(4deg);
 }
 
 .ghx-row.ghx-stat-1 {
-    transform: scale(.7);
-    transform-origin: bottom left;
+  transform: scale(0.7);
+  transform-origin: bottom left;
 }
 
 .ghx-extra-field.ghx-fa {
-    display: none;
+  display: none !important;
 }
 
 .ghx-extra-field {
-    font-size: 10px !important;
-    line-height: 10px !important;
-    font-weight: 700 !important;
-    margin: 0 !important;
-    background: #f79232;
-    padding: 3px;
-    border-radius: 4px;
-    color: white;
+  font-size: 10px !important;
+  line-height: 10px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  background: #f79232;
+  padding: 3px;
+  border-radius: 4px;
+  color: white;
 }
 
 .ghx-sprint-goal {
-    color: white !important;
-    position: relative;
-    bottom: 14px;
+  color: white !important;
+  position: relative;
+  bottom: 14px;
+}
+
+.ghx-issue-compact .ghx-end.ghx-row {
+  position: static !important;
+}
+
+.ghx-issue-compact .ghx-plan-extra-fields.ghx-row:not(.ghx-end) {
+  position: absolute !important;
+  top: 19px;
+  right: 0;
+}
+
+.ghx-issue-compact .ghx-end .ghx-end {
+  position: static;
+  padding-bottom: 5px !important;
+}
+
+.ghx-row.ghx-plan-main-fields {
+  position: relative !important;
+  top: 17px;
+}
+
+.ghx-end.ghx-items-container .ghx-priority img {
+  position: absolute;
+  top: 0px;
+  left: 69px;
+}
+.ghx-end.ghx-items-container .aui-badge.ghx-statistic-badge {
+  position: absolute;
+  top: 2px;
+  left: 86px;
+  padding: 1px 5px;
+  margin-right: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  background: #47bae0;
+  background: linear-gradient(
+    to bottom,
+    #47bae0 50%,
+    #4dbbe2 50%,
+    #33b5e0 50%
+  ); /* W3C */
+  border-radius: 5px;
 }

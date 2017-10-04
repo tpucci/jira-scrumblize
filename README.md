@@ -29,7 +29,7 @@ Edit `scrummer.css` to modify the style of classes injected by our script.
 
 ### Script
 
-Run `yarn dev` to make Webpack watch `inject/index.js` file and transpile it with the `es2015` preset into `pre-build/jisc.js`.
+Run `yarn dev` to make Webpack watch `src/index.js` file and transpile it with the `es2015` preset into `pre-build/jisc.js`.
 
 ### Debug
 
